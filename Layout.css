@@ -1,0 +1,265 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+/* Wrapper for fixed-width layout */
+.wrapper {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Header styling */
+header {
+    background-color: #725e65;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #d1d1d1;
+}
+
+/* Menu styling */
+.menu {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pengenalan {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pengenalan h2 {
+    margin-bottom: 15px;
+    color: #725e65;
+    font-size: 24px;
+}
+
+.pengenalan p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.iframe-container {
+    width: 45%; /* Same width as .pengenalan */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.iframe-container h2 {
+    margin-bottom: 15px;
+    color: #725e65;
+    font-size: 24px;
+    text-align: left;
+    width: 100%;
+}
+
+.iframe-container iframe {
+    width: 90%; /* Adjust to 100% of container width */
+    height: 270px;
+    border: none;
+    border-radius: 8px;
+}
+
+.iframe-container p {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Slide container styling */
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slide-containertakwim {
+    width: 100%;
+    height: 100vh; /* Make the container take the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide any overflow if iframe exceeds container */
+}
+
+/* Style for the iframe within slide-containertakwim */
+.slide-containertakwim iframe {
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.slide-container iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pengenalan, .iframe-container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style for the news section container */
+.news-section {
+    max-width: 800px; /* Set a maximum width */
+    margin: 40px auto; /* Center the news section horizontally */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align the content */
+}
+
+.news-section h2 {
+    font-size: 24px;
+    color: #725e65;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.news-item {
+    margin-bottom: 30px;
+}
+
+.news-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.news-item p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #725e65;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news-item a:hover {
+    color: #d1d1d1;
+}
+
+.slide-containerdirektori {
+    width: 100%;
+    height: 50vh; /* Make the container take the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; /* Remove or reduce margin to reduce gap */
+    padding-top: 0; /* Ensure there's no padding at the top */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Style for the iframe within slide-containertakwim */
+.slide-containerdirektori iframe {
+    width: 50%;
+    height: 100%;
+    border: none;
+}
