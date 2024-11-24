@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Majlis Tertinggi Kolej Tuah - UPNM</title>
+	<link rel="stylesheet" href="Layout.css"> 
+</head>
+<body>
+<div class="wrapper">
+
+<header>
+	<div class="logo">
+	<img src="LogoMTKT.png" alt="Club Logo" />
+	</div>
+	<nav>
+		<ul>
+		<li><a href="MTKTUtama.html">Utama</a></li>
+		<li><a href="MTKTKorporat.html">Korporat</a></li>
+		<li><a href="MTKTAktiviti.html">Aktiviti</a></li>
+		<li><a href="MTKTDirektori.html">Direktori</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="slide-container">
+	<h2>Sebarang pertanyaan boleh diajukan melalui emel berikut:</h2>
+	<h4>mtkolejtuah@gmail.com</h4>
+</div>
+<main>
+	<h1>Borang Aduan MTKT</h1>
+	<form id="reportForm">
+		<label for="name">Nama:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="phone">No. Telefon:</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="matrix">No. Matrik:</label>
+		<input type="text" id="matrix" name="matrix" required>
+
+		<label for="date">Tarikh Aktiviti:</label>
+		<input type="date" id="date" name="date" required>
+
+		<label for="description">Penerangan Aduan:</label>
+		<textarea id="description" name="description" rows="4" required></textarea>
+
+		<button type="submit">Hantar Laporan</button>
+	</form>
+	<p id="responseMessage" style="display:none; color:green;">Laporan Telah Diterima</p>
+</main>
+
+</div> <!-- Close the wrapper div -->
+
+<script>
+document.getElementById("reportForm").addEventListener("submit", function(event){
+	event.preventDefault();
+
+	const form = event.target;
+	const formData = new FormData(form);
+
+	submitForm(formData);
+});
+
+function submitForm(formData) {
+	fetch("https://script.google.com/macros/s/AKfycbyF9QR4ydHOl5LkYelLo-X2HoemHJuDxzr8XTjSTWrzrkt733moTSgHFDerpie_RN8N8g/exec", { // Replace with your Google Apps Script URL
+		method: "POST",
+		body: new URLSearchParams(formData)
+	})
+	.then(response => response.text())
+	.then(data => {
+		if (data === "Success") {
+			document.getElementById("responseMessage").style.display = "block";
+			document.getElementById("reportForm").reset();
+		} else {
+			alert("Failed to submit. Please try again.");
+		}
+	})
+	.catch(error => console.error("Error:", error));
+}
+</script>
+
+</body>
+</html>
