@@ -334,16 +334,9 @@ form button[type="submit"]:hover {
     background-color: #8b7a80;
 }
 
-.slide-container h2 {
-    font-size: 24px;
-    color: #725e65;
-    margin-bottom: 2px;
-    text-align: center;
-}
-
-.slide-container h4 {
-    font-size: 24px;
-    color: #725e65;
-    margin-bottom: 2px;
+.slide-containeraduan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
