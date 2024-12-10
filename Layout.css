@@ -137,6 +137,7 @@ header nav ul li a:hover {
     align-items: center;
     gap: 15px;
     margin-bottom: 2px;
+    height: 78vh;
 }
 
 .slide-containertakwim {
