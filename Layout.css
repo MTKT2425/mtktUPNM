@@ -115,10 +115,11 @@ header nav ul li a:hover {
 }
 
 .iframe-container iframe {
-    width: 90%; /* Adjust to 100% of container width */
-    height: 270px;
+    width: 100%; /* Adjust to 100% of container width */
+    height: 100%;
     border: none;
     border-radius: 8px;
+    max-width: 100%;
 }
 
 .iframe-container p {
@@ -149,15 +150,16 @@ header nav ul li a:hover {
 
 /* Style for the iframe within slide-containertakwim */
 .slide-containertakwim iframe {
-    width: 80%;
+    width: 100%;
     height: 100%;
     border: none;
+    max-width: 100%;
 }
 
 .slide-container iframe {
     width: 100%;
     max-width: 1000px;
-    height: 500px;
+    height: 100%;
     border: none;
     border-radius: 8px;
 }
@@ -194,6 +196,14 @@ header nav ul li a:hover {
 
     header nav ul li {
         margin: 5px 0;
+    }
+    
+    .slide-containertakwim iframe,
+    .slide-containerdirektori iframe,
+    .slide-containerdirektori,
+    .slide-containertakwim {
+        height: 60vh; /* Adjust height for smaller screens */
+        margin-top: 25px;
     }
 }
 
@@ -261,9 +271,10 @@ header nav ul li a:hover {
 
 /* Style for the iframe within slide-containertakwim */
 .slide-containerdirektori iframe {
-    width: 50%;
+    width: 100%;
     height: 100%;
     border: none;
+    max-width: 100%;
 }
 
 /* Form Section Styling */
