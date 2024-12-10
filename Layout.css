@@ -137,7 +137,6 @@ header nav ul li a:hover {
     align-items: center;
     gap: 15px;
     margin-bottom: 2px;
-    height: 78vh;
 }
 
 .slide-containertakwim {
@@ -164,6 +163,7 @@ header nav ul li a:hover {
     height: 100%;
     border: none;
     border-radius: 8px;
+    height: 78vh;
 }
 
 /* Footer styling */
