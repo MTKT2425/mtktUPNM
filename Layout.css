@@ -357,3 +357,8 @@ form button[type="submit"]:hover {
     align-items: center;
     text-align: center;
 }
+.check {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 35px;
+}
