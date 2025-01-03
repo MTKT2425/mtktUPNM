@@ -109,15 +109,36 @@
         <h1>SEMAKAN KEPUTUSAN PENGAMBILAN AHLI MTKT EDISI KE-2</h1>
         <p>Pastikan anda memasukkan NO. MATRIK yang sah dan betul</p>
         <input type="text" id="uniqueId" placeholder="Masukkan NO. MATRIK anda">
-        <button onclick="checkResult()">Semak Keputusan</button>
+        <button disabled onclick="checkResult()">Semak Keputusan</button>
         <p class="loading" id="loading">Checking...please wait...</p>
         <div class="banner" id="banner"></div>
     </div>
 
     <script>
         const results = {
-            "ID67890": "Maaf. Permohonan anda tidak berjaya",
-            "ID11223": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+            "2230670": "Maaf. Permohonan anda tidak berjaya",
+	        "2240098": "Maaf. Permohonan anda tidak berjaya",
+	        "2240877": "Maaf. Permohonan anda tidak berjaya",
+	        "2230855": "Maaf. Permohonan anda tidak berjaya",
+	        "2241070": "Maaf. Permohonan anda tidak berjaya",
+	        "2240479": "Maaf. Permohonan anda tidak berjaya",
+	        "2240852": "Maaf. Permohonan anda tidak berjaya",
+	        "2240755": "Maaf. Permohonan anda tidak berjaya",
+	        "2240097": "Maaf. Permohonan anda tidak berjaya",
+	        "2230631": "Maaf. Permohonan anda tidak berjaya",
+	        "2241002": "Maaf. Permohonan anda tidak berjaya",
+
+            "2230491": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2230838": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2230299": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240255": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240378": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240216": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240684": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240145": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240740": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2240419": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
+	        "2241018": "Tahniah! Anda terpilih menjadi ahli baharu MTKT Sesi 2024/2025",
         };
 
         function checkResult() {
