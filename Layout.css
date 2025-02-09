@@ -180,7 +180,7 @@ header nav ul li a:hover {
 }
 
 /* Responsive design */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .slide-container iframe {
         height: 30vh;
     }
