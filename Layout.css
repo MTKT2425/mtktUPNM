@@ -180,11 +180,6 @@ header nav ul li a:hover {
 }
 
 /* Responsive design */
-@media (max-width: 550px) {
-    .slide-container iframe {
-        height: 30vh;
-    }
-}
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -218,6 +213,11 @@ header nav ul li a:hover {
     }
     .slide-container iframe {
         height: 50vh;
+    }
+}
+@media (max-width: 550px) {
+    .slide-container iframe {
+        height: 30vh;
     }
 }
 
