@@ -215,6 +215,11 @@ header nav ul li a:hover {
         height: 50vh;
     }
 }
+@media (max-width: 730px) {
+    .slide-container iframe {
+        height: 45vh;
+    }
+}
 @media (max-width: 550px) {
     .slide-container iframe {
         height: 30vh;
