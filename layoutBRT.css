@@ -27,7 +27,7 @@ body {
 /* Main Container for Google Sheets Embed */
 .main-container {
     width: 1000px; /* Fixed width for the content */
-    height: 73vh;
+    height: 100%;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -78,7 +78,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 55vh;
+    height: 100%;
 }
 
 .info-container h2 {
